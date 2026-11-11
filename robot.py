@@ -191,7 +191,7 @@ def new_pose(robot, i, offset):
 
 # detector = LightsaberDetector()
 with Robot(visualize=True, open_browser=None) as robot:
-    grip = input("Enter 1 to open grip or 0 to close grip")
+    grip = int(input("Enter 1 to open grip or 0 to close grip: "))
     robot.grip(grip)
     input("Press enter to start free drive")
     robot.free_drive()
